@@ -1,0 +1,17 @@
+patch:
+  "menu/page_size": 9
+  schema_list:
+    - {schema: luna_pinyin_simp}
+
+  switch_key:
+    Shift_L: commit_code
+    Shift_R: noop
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: noop
+    Eisu_toggle: clear
+
+  "translator/enable_encoder": true
+  "translator/enable_sentence": true
+  "translator/enable_user_dict": true
+  "translator/encode_commit_history": true

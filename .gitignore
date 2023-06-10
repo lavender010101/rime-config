@@ -1,0 +1,16 @@
+# build folders
+build
+*.userdb
+sync
+
+# build files
+user.yaml
+installation.yaml
+
+# themes
+# weasel.custom.yaml
+# squirrel.custom.yaml
+
+# unused dictionaries
+# dicts/emotions
+# dicts/thuocl

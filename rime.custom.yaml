@@ -1,0 +1,7 @@
+patch:
+  style/horizontal: true      # 候選橫排
+  style/inline_preedit: true  # 內嵌編碼（僅支持TSF）
+    # style/display_tray_icon: true  # 顯示托盤圖標
+
+  "menu/page_size": 9
+  "style/font_face": "San Francisco Display Medium,Hanazono Mincho A Regular,Microsoft YaHei Regular"

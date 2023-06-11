@@ -18,7 +18,7 @@ patch:
   #"key_binder/bindings":
   #  - { when: paging, accept: bracketleft, send: Page_Up }
   #  - { when: has_menu, accept: bracketright, send: Page_Down }
-  # "switches/@0/reset": 1  #表示将 switcher 列表中的第一个元素（即 ascii_mode 开关）的初始值重设为状态1（即“英文”）。
+  "switches/@0/reset": 1  #表示将 switcher 列表中的第一个元素（即 ascii_mode 开关）的初始值重设为状态1（即“英文”）。
   #表情'/'输入
   punctuator/import_preset: symbols #表情
   recognizer/patterns/punct: "^\\\\([a-z]+|[0-9])$" #输入‘/’
@@ -44,12 +44,12 @@ patch:
 
 
   # 过滤生僻字
-  switches:
-    - options: ["gbk+emoji","utf8"] # 字符集选单
-  reset: 0 # 默认gbk，UTF-8原生支持Emoji
-  states:
-    - GBK
-    - UTF-8
+  # switches:
+  #   - options: ["gbk+emoji","utf8"] # 字符集选单
+  # reset: 0 # 默认gbk，UTF-8原生支持Emoji
+  # states:
+  #   - GBK
+  #   - UTF-8
 
   engine/translators:
     - lua_translator@date_translator

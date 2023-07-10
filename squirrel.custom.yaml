@@ -2,8 +2,9 @@ patch:
   style/horizontal: true      # 候選橫排
   style/inline_preedit: true  # 內嵌編碼（僅支持TSF）
     # style/display_tray_icon: true  # 顯示托盤圖標
-    # style/font_point: 18
+  style/font_point: 22
     # style/color_scheme: native
+  style/font_face: "LXGW WenKai"
     
 # 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
 #   系統默認色系 - native

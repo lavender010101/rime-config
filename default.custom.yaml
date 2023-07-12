@@ -3,13 +3,18 @@ patch:
   schema_list:
     - {schema: luna_pinyin_simp}
 
-  switch_key:
-    Shift_L: commit_code
-    Shift_R: noop
-    Control_L: noop
-    Control_R: noop
-    Caps_Lock: noop
-    Eisu_toggle: clear
+  #ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+      # 下面几个可选参数，noop:         该键失效
+      #                   inline_ascii: 继续输入英文，回车上屏，并保持中文输入
+      #                   commit_code:  英文上屏，并切换为英文输入
+      #                   commit_text:  候选字上屏，并切换为英文输入
+      #                   clear:        字符被清除，同时RIME输入状态切换为英文输入。
+      Caps_Lock: noop
+      Shift_L: commit_code
+      Shift_R: noop
+      Control_L: noop
+      Control_R: noop
 
   "translator/enable_encoder": true
   "translator/enable_sentence": true

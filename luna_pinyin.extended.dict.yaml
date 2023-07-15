@@ -58,4 +58,7 @@ import_tables: # 不需要的加'#'即可
   - dicts/sogou/sogou.math
   - dicts/sogou/sogou.pingpong
   - dicts/sogou/sogou.places
+  - dicts/sogou/sogou.popular   # 网络流行语
+  - dicts/sogou/sogou.modern_chinese_part1
+  - dicts/sogou/sogou.modern_chinese_part2
 ...

@@ -40,7 +40,7 @@ import_tables: # 不需要的加'#'即可
   # extend
   # - dicts/extend/luna_pinyin.wenhua # 成语、诗词、文言
   # - dicts/extend/luna_pinyin.sogoupopular # 网络流行新词，搜狗
-  - dicts/extend/luna_pinyin.chaizi # 简体拆字
+  # - dicts/extend/luna_pinyin.chaizi # 简体拆字
   # - dicts/extend/luna_pinyin.cn_en # 中英混输
   # - dicts/extend/luna_pinyin.hanyu # 汉语扩充
   # - dicts/extend/luna_pinyin.computer # 计算机

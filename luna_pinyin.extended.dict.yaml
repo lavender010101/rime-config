@@ -3,9 +3,6 @@
 #
 # Luna Pinyin Extended Dictionary（明月拼音扩充词库）
 #
-# https://github.com/ASC8384/myRime
-# mailto:ASC_8384@foxmail.com
-#
 # 部署位置：
 # ~/.config/ibus/rime  (Linux)
 # ~/Library/Rime  (Mac OS)
@@ -51,7 +48,7 @@ import_tables: # 不需要的加'#'即可
   # - dicts/extend/luna_pinyin.zhuanye # 专业术语，地理，法律，军事，天文，物理，数学
   # - dicts/extend/luna_pinyin.extra_hanzi # 额外的字
   # - dicts/extend/luna_pinyin.english # 英语
-  # - dicts/extend/luna_pinyin.sgmain # @scomper 做的搜狗词汇汇总
+  - dicts/extend/luna_pinyin.sgmain # @scomper 做的搜狗词汇汇总
 
   # sogou cell
   - dicts/sogou/sogou.ai

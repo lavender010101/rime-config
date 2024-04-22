@@ -35,13 +35,11 @@ librime-lua 样例
 
 --]]
 
-
 -- I. translators:
 
 -- date_translator: 将 `date` 翻译为当前日期
 -- 详见 `lua/date.lua`:
 date_translator = require("date")
-
 
 -- week_translator: 将 `week` 翻译为当前星期
 -- 详见 `lua/week.lua`:
@@ -54,7 +52,6 @@ time_translator = require("time")
 -- number_translator: 将 `/` + 阿拉伯数字 翻译为大小写汉字
 -- 详见 `lua/number.lua`
 number_translator = require("number")
-
 
 -- II. filters:
 
@@ -72,3 +69,7 @@ single_char_filter = require("single_char")
 -- reverse_lookup_filter: 依地球拼音为候选项加上带调拼音的注释
 -- 详见 `lua/reverse.lua`
 reverse_lookup_filter = require("reverse")
+
+-- local baidu = require("trigger")("Control+t", require("baidu"))
+-- baidu_translator = baidu.translator
+-- baidu_processor = baidu.processor

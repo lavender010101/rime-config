@@ -18,8 +18,18 @@ patch:
   #"key_binder/bindings":
   #  - { when: paging, accept: bracketleft, send: Page_Up }
   #  - { when: has_menu, accept: bracketright, send: Page_Down }
-  "switches/@0/reset": 1  #表示将 switcher 列表中的第一个元素（即 ascii_mode 开关）的初始值重设为状态1（即“英文”）。
+  # "switches/@0/reset": 1  #表示将 switcher 列表中的第一个元素（即 ascii_mode 开关）的初始值重设为状态1（即“英文”）。
   #表情'/'输入
+  switches:
+    - name: ascii_mode #英文状态 非0为真
+      reset: 1 #默认是0(即默认是中文)
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: ascii_punct
+      states: [ ，。, ，． ]
+    - name: extended_charset
+      states: [ 通用, 增廣 ]
   punctuator/import_preset: symbols #表情
   recognizer/patterns/punct: "^\\\\([a-z]+|[0-9])$" #输入‘/’
   # "^/([a-z]+|[0-9])$"
@@ -55,10 +65,13 @@ patch:
     - lua_translator@date_translator
     - lua_translator@time_translator
     - lua_translator@week_translator
+      # - lua_translator@baidu_translator
       # - lua_translator@easy_en_translator
     - punct_translator
     - script_translator
     - table_translator@custom_phrase
+      # engine/processors:
+      #   - lua_processor@baidu_processor
 
   engine/filters:
       # - simplifier@emoji_suggestion

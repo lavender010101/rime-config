@@ -1,0 +1,3 @@
+[submodule "dicts/other/rime-ice"]
+	path = dicts/other/rime-ice
+	url = https://github.com/iDvel/rime-ice.git

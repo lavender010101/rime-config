@@ -27,7 +27,7 @@ local function translator(input, seg)
 	local _, j = pcall(json.decode, reply)
 	if j.status == "T" and j.result and j.result[1] then
 		for i, v in ipairs(j.result[1]) do
-			local c = Candidate("simple", seg.start, seg.start + v[2], v[1], "(百度云拼音)")
+			local c = Candidate("simple", seg.start, seg.start + v[2], v[1], "(百度)")
 			c.quality = 2
 			if string.gsub(v[3].pinyin, "'", "") == string.sub(input, 1, v[2]) then
 				c.preedit = string.gsub(v[3].pinyin, "'", " ")
@@ -38,21 +38,3 @@ local function translator(input, seg)
 end
 
 return translator
---
--- local function translator(input, seg)
---    local url = make_url(input, 0, 5)
---    local reply = http.request(url)
---    local _, j = pcall(json.decode, reply)
---    if j.status == "T" and j.result and j.result[1] then
---       for i, v in ipairs(j.result[1]) do
--- 	 local c = Candidate("simple", seg.start, seg.start + v[2], v[1], "(百度云拼音)")
--- 	 c.quality = 2
--- 	 if string.gsub(v[3].pinyin, "'", "") == string.sub(input, 1, v[2]) then
--- 	    c.preedit = string.gsub(v[3].pinyin, "'", " ")
--- 	 end
--- 	 yield(c)
---       end
---    end
--- end
---
--- return translator

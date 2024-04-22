@@ -61,43 +61,46 @@ patch:
   #   - GBK
   #   - UTF-8
 
-  engine/translators:
-    - lua_translator@date_translator
-    - lua_translator@time_translator
-    - lua_translator@week_translator
-      # - lua_translator@baidu_translator
-      # - lua_translator@easy_en_translator
-    - punct_translator
-    - script_translator
-    - table_translator@custom_phrase
-      # engine/processors:
-      #   - lua_processor@baidu_processor
+  engine:
+    processors:
+      - ascii_composer
+      - recognizer
+      - key_binder
+      - speller
+      - punctuator
+      - selector
+      - navigator
+      - express_editor
+      - lua_processor@baidu_processor
 
-  engine/filters:
+    translators:
+      - lua_translator@date_translator
+      - lua_translator@time_translator
+      - lua_translator@week_translator
+      - lua_translator@baidu_translator
+        # - lua_translator@easy_en_translator
+      - punct_translator
+      - script_translator
+      - table_translator@custom_phrase
+
+        # engine/processors:
+        #   - lua_processor@baidu_processor
+
+    filters:
       # - simplifier@emoji_suggestion
       # - simplifier@zh_simp # 简体
-    - simplifier
-    - uniquifier
-    - charset_filter@gbk+emoji # GBK过滤 
+      - simplifier
+      - uniquifier
+      - charset_filter@gbk+emoji # GBK过滤 
       # - charset_filter@gbk
       # - single_char_filter
-      # engine/processors:
-      #   - ascii_composer
-    - recognizer
-    - key_binder
-    - speller
-    - punctuator
-    - selector
-    - navigator
-    - express_editor
+    segmentors:
+      - ascii_segmentor
+      - matcher
+      - abc_segmentor
+      - punct_segmentor
+      - fallback_segmentor
 
-
-  engine/segmentors:
-    - ascii_segmentor
-    - matcher
-    - abc_segmentor
-    - punct_segmentor
-    - fallback_segmentor
   emoji_suggestion:
     opencc_config: emoji.json
     option_name: emoji_suggestion

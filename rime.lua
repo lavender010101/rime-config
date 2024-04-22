@@ -70,6 +70,6 @@ single_char_filter = require("single_char")
 -- 详见 `lua/reverse.lua`
 reverse_lookup_filter = require("reverse")
 
--- local baidu = require("trigger")("Control+t", require("baidu"))
--- baidu_translator = baidu.translator
--- baidu_processor = baidu.processor
+local baidu = require("trigger")("Control+t", require("baidu"))
+baidu_translator = baidu.translator
+baidu_processor = baidu.processor

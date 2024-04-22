@@ -1,7 +1,7 @@
 patch:
   style/horizontal: true      # 候選橫排
   style/inline_preedit: false # true: 拼音内嵌到应用 , false: 拼音显示在输入法
-    # style/display_tray_icon: true  # 顯示托盤圖標
+  style/display_tray_icon: true  # 顯示托盤圖標
   # 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
   #   系統默認色系 - native
   #   碧水 - aqua
@@ -14,7 +14,7 @@ patch:
   #   谷歌 - google
   #   曬經石 - solarized_rock
   #   简约白 - clean_white
-  # style/color_scheme: native
+  style/color_scheme: native
   style/font_face: "LXGW WenKai"
   style/font_point: 22
   style/label_font_face: "LXGW WenKai"

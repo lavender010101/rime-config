@@ -63,7 +63,8 @@ import_tables: # 不需要的加'#'即可
   - dicts/sogou/sogou.modern_chinese_part2
 
   # rime-ice
-  # - dicts/other/rime-ice/cn_dicts/8150  # 字表
+  # - dicts/other/rime-ice/cn_dicts/8150  # 小字表
+  - dicts/other/rime-ice/cn_dicts/41448  # 大字表
   - dicts/other/rime-ice/cn_dicts/base  # 基础词库
   - dicts/other/rime-ice/cn_dicts/ext  # 扩展词库，小词库
   - dicts/other/rime-ice/cn_dicts/tencent  # 扩展词库，大词库

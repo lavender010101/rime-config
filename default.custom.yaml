@@ -12,7 +12,7 @@ patch:
       #                   clear:        字符被清除，同时RIME输入状态切换为英文输入。
       Caps_Lock: noop
       Shift_L: commit_code
-      Shift_R: noop
+      Shift_R: clear
       Control_L: noop
       Control_R: noop
 

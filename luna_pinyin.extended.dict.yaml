@@ -13,7 +13,7 @@
 
 ---
 name: luna_pinyin.extended
-version: "2021.02"
+version: "2024.06"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables: # 不需要的加'#'即可
@@ -21,8 +21,9 @@ import_tables: # 不需要的加'#'即可
   - luna_pinyin
 
   # clover
-  - dicts/clover/clover.base # 单字，四叶草
-  - dicts/clover/clover.phrase # 词组
+  # - dicts/clover/clover.base # 单字，四叶草
+  # - dicts/clover/clover.phrase # 词组
+  
   # other
   # - dicts/other/zhwiki # 中文 wiki（较大）
   # - dicts/other/myemoji # emoji 颜文字
@@ -45,10 +46,10 @@ import_tables: # 不需要的加'#'即可
   # - dicts/extend/luna_pinyin.yanwenzi # 颜文字
   # - dicts/extend/luna_pinyin.game # 游戏，DND，MC，RA，魔兽争霸
   - dicts/extend/luna_pinyin.changyong # 常用聊天用语
-  # - dicts/extend/luna_pinyin.zhuanye # 专业术语，地理，法律，军事，天文，物理，数学
+  - dicts/extend/luna_pinyin.zhuanye # 专业术语，地理，法律，军事，天文，物理，数学
   # - dicts/extend/luna_pinyin.extra_hanzi # 额外的字
   # - dicts/extend/luna_pinyin.english # 英语
-  - dicts/extend/luna_pinyin.sgmain # @scomper 做的搜狗词汇汇总
+  # - dicts/extend/luna_pinyin.sgmain # @scomper 做的搜狗词汇汇总
 
   # sogou cell
   - dicts/sogou/sogou.ai

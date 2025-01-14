@@ -23,18 +23,18 @@ import_tables: # 不需要的加'#'即可
   # clover
   # - dicts/clover/clover.base # 单字，四叶草
   # - dicts/clover/clover.phrase # 词组
-  
+
   # other
   # - dicts/other/zhwiki # 中文 wiki（较大）
   # - dicts/other/myemoji # emoji 颜文字
-  
+
   # thuocl
   - dicts/thuocl/THUOCL_IT # 本词表包含了大量IT类词汇，THU Open Chinese Lexicon
   # - dicts/thuocl/THUOCL_caijing # 本词表包含了大量财经类词汇
   # - dicts/thuocl/THUOCL_chengyu # 本词表包含了大量成语词汇
   # - dicts/thuocl/THUOCL_diming # 地名
-  
-  
+
+
   # extend
   # - dicts/extend/luna_pinyin.wenhua # 成语、诗词、文言
   # - dicts/extend/luna_pinyin.sogoupopular # 网络流行新词，搜狗
@@ -65,9 +65,9 @@ import_tables: # 不需要的加'#'即可
 
   # rime-ice
   # - dicts/other/rime-ice/cn_dicts/8150  # 小字表
-  - dicts/other/rime-ice/cn_dicts/41448  # 大字表
-  - dicts/other/rime-ice/cn_dicts/base  # 基础词库
-  - dicts/other/rime-ice/cn_dicts/ext  # 扩展词库，小词库
-  - dicts/other/rime-ice/cn_dicts/tencent  # 扩展词库，大词库
+  - dicts/others/rime-ice/cn_dicts/41448  # 大字表
+  - dicts/others/rime-ice/cn_dicts/base  # 基础词库
+  - dicts/others/rime-ice/cn_dicts/ext  # 扩展词库，小词库
+  - dicts/others/rime-ice/cn_dicts/tencent  # 扩展词库，大词库
 
 ...
